@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Login </title>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Varela" rel="stylesheet" /> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/bg4.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+.content{
+	min-height: 600px;
+	color:white;
+}
+.banner-image{
+  
+  padding-bottom: 50px; 
+ 
+    margin-bottom: 20px; 
+   
+ text-align: center;    
+ 
+   color: #f8f8f8;     
+ 
+   background: url(images/.jpg) no-repeat center; 
+  
+  background-size: cover;
+}
+
+.banner-image1{
+  
+  padding-bottom: 50px; 
+ 
+    margin-bottom: 20px; 
+   
+ text-align: center;    
+ 
+   color: #f8f8f8;     
+ 
+   background: url() no-repeat center; 
+  
+  background-size: cover;
+}
+
+
+.inner-banner-image{
+     
+   padding-top: 12%;   
+ 
+        width:80%;    
+  
+      margin:auto;
+ 
+}
+.banner_content{
+	position: relative;
+	padding-top: 6%; 
+	padding-bottom: 6%; 
+	overflow:hidden; 
+	
+	background-color: rgba(0, 0, 0, 0.4); 
+	border:2px solid black;
+	max-width: 660px;
+}
+
+
+
+
+
+#container{
+   
+ width:90%;    
+ 
+   margin:auto;   
+   
+ overflow:hidden; 
+}
+
+
+.form-control{
+	size:15px;
+}
+
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">Zenopsys</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="home.html" class="w3-bar-item w3-button">Home</a>
+      <a href="login.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>Login</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> About Us</a>
+      <a href="Register.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Register</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="login.html" onclick="w3_close()" class="w3-bar-item w3-button">Login</a>
+  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">About Us</a>
+  <a href="Register.html" onclick="w3_close()" class="w3-bar-item w3-button">Register</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+     <span class="w3-jumbo w3-hide-small" style="color:white"></span><br>
+    
+    
+  </div> 
+  
+
+
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+<div class="content">
+	 
+            <center>
+             <div class="inner-banner-image">
+                 <div class="banner_content">
+                     
+  <h2>Login form</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
+    </div>
+   
+    <button type="submit" class="btn btn-default">Submit</button>
+	<a href="forgetpassword.html" >Forget password ?</a>
+	
+	<button type="button" class="btn btn-default">Cancel</button>
+  </form>
+</div>                  
+             </center>
+      </div>
+	</header>
+
+ </body> 
+</html>
+	
+	
