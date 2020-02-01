@@ -6,6 +6,6 @@ It includes a Responsive Registration Web Page, A Login page and the Functional 
 Linked In:
 https://www.linkedin.com/in/gopi-r-312401175
 
- See This Project: https://gopiraj7411.github.io/My-projects/
+ See This Project:  https://gopiraj7411.github.io/Web-Project/.
 
 Happy Coding :)
